@@ -1,0 +1,19 @@
+[package]
+name = "symmetrical-meme"
+version = "0.1.0"
+edition = "2021"
+authors = ["othelarian <le.maitre.killian@gmail.com>"]
+
+[dependencies]
+futures-util = "0.3.19"
+tokio-stream = "0.1.8"
+warp = "0.3.2"
+
+#TODO
+# gluon
+# systray (2 ?)
+
+[dependencies.tokio]
+version = "1.15.0"
+features = ["macros", "rt", "rt-multi-thread", "sync"]
+
