@@ -3,8 +3,26 @@
   <head>
     <title>Symmetrical-meme</title>
     <script type="text/javascript" src="chat.js"></script>
+    <style>
+      body { text-align: center; }
+      .chat_zone {
+        border: solid 1px gray;
+        max-width: 500px;
+        height: 70%;
+        text-align: left;
+        margin: auto;
+        padding: 5px;
+        font-size: 12px;
+      }
+      .msg { color: green; font-weight: bold; }
+      .cmd { color: blue; font-style: italic; }
+      .end { color: red; font-weight: bold; }
+    </style>
   </head>
   <body onload="initchat();">
-    ??? (plop)
+    <div class="chat_zone" id="chat_zone"></div>
+    <span>User id:&nbsp;</span><span id="user_id"></span>&nbsp;
+    <input id="inp" />
+    <button onclick="send_msg();">Envoyer</button>
   </body>
 </html>
